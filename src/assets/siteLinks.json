@@ -1,37 +1,39 @@
 [
   {
     "icon": "Blog",
-    "name": "博客",
-    "link": "https://blog.imsyy.top/"
+    "name": "个人博客",
+    "link": "http://blog.pokeya.cc/"
   },
   {
-    "icon": "Cloud",
-    "name": "网盘",
-    "link": "https://pan.imsyy.top/"
+    "isLocalImg": true,
+    "icon": "/images/icon/juejin.svg",
+    "name": "稀土掘金",
+    "link": "http://juejin.pokeya.cc/"
   },
   {
-    "icon": "CompactDisc",
-    "name": "音乐",
-    "link": "https://music.imsyy.top/"
+    "isLocalImg": true,
+    "icon": "/images/icon/yuque.png",
+    "name": "语雀空间",
+    "link": "http://yuque.pokeya.cc/"
   },
   {
-    "icon": "Compass",
-    "name": "起始页",
-    "link": "https://nav.imsyy.top/"
+    "isLocalImg": true,
+    "icon": "/images/icon/navigate.png",
+    "name": "导航页",
+    "link": "http://nav.pokeya.cc/"
   },
   {
-    "icon": "Book",
-    "name": "网址集",
-    "link": "https://web.imsyy.top/"
+    "isLocalImg": true,
+    "icon": "/images/icon/devbox.png",
+    "name": "开发百宝箱",
+    "link": "http://web.pokeya.cc/",
+    "tobeOpened": true
   },
   {
-    "icon": "Fire",
-    "name": "今日热榜",
-    "link": "https://hot.imsyy.top/"
-  },
-  {
-    "icon": "LaptopCode",
-    "name": "站点监测",
-    "link": "https://status.imsyy.top/"
+    "isLocalImg": true,
+    "icon": "/images/icon/resume.png",
+    "name": "个人简历",
+    "link": "http://resume.pokeya.cc/",
+    "tobeOpened": true
   }
 ]

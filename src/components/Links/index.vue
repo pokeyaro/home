@@ -31,9 +31,14 @@
               class="item cards"
               :style="index < 3 ? 'margin-bottom: 20px' : null"
             >
-              <Icon size="26">
-                <component :is="siteIcon[item.icon]" />
-              </Icon>
+              <span v-if="item.isLocalImg">
+                <img class="icon" :src="item.icon" height="26" />
+              </span>
+              <span v-else>
+                <Icon size="26" style="background: coral; border-radius: 5px;">
+                  <component :is="siteIcon[item.icon]" />
+                </Icon>
+              </span>
               <span class="name">{{ item.name }}</span>
             </div>
           </el-col>
@@ -48,16 +53,7 @@
 import { onMounted, computed } from "vue";
 import { Icon } from "@vicons/utils";
 // 可前往 https://www.xicons.org 自行挑选并在此处引入
-import {
-  Link,
-  Blog,
-  CompactDisc,
-  Cloud,
-  Compass,
-  Book,
-  Fire,
-  LaptopCode,
-} from "@vicons/fa";
+import { Blog } from "@vicons/fa";
 import { mainStore } from "@/store";
 import { Swiper, SwiperSlide } from "swiper/vue";
 import { Pagination, Mousewheel } from "swiper";
@@ -78,18 +74,18 @@ const siteLinksList = computed(() => {
 });
 
 // 网站链接图标
-const siteIcon = {
-  Blog,
-  Cloud,
-  CompactDisc,
-  Compass,
-  Book,
-  Fire,
-  LaptopCode,
-};
+const siteIcon = { Blog };
 
 // 链接跳转
 const jumpLink = (data) => {
+  if (data.tobeOpened) {
+    ElMessage({
+      message: "头发紧张，不定期开发哦～",
+      grouping: true,
+      duration: 2000,
+    });
+    return false;
+  }
   if (data.name === "音乐" && store.musicClick) {
     if (typeof $openList === "function") $openList();
   } else {

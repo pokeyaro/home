@@ -45,7 +45,7 @@ const props = defineProps({
   // 音频自动播放
   autoplay: {
     type: Boolean,
-    default: false,
+    default: true,
   },
   // 主题色
   theme: {
@@ -83,7 +83,7 @@ const props = defineProps({
   // id
   songId: {
     type: String,
-    default: "7452421335",
+    default: "961112997",
   },
   // 列表是否默认折叠
   listFolded: {

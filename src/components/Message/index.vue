@@ -87,7 +87,11 @@ watch(
     -webkit-animation: fade 0.5s;
     .logo-img {
       border-radius: 50%;
-      width: 120px;
+      width: 160px;
+      transition: transform 2s ease-in-out;
+    }
+    .logo-img:hover {
+      transform: rotate(900deg);
     }
     .name {
       width: 100%;
@@ -106,6 +110,13 @@ watch(
         @media (min-width: 720px) and (max-width: 789px) {
           display: none;
         }
+      }
+
+      span {
+        background: linear-gradient(to right, #12bffe, #066cd3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        position: relative;
       }
     }
     @media (max-width: 768px) {

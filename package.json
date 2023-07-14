@@ -1,10 +1,10 @@
 {
   "name": "home",
-  "author": "imsyy",
-  "github": "https://github.com/imsyy/home",
-  "home": "https://imsyy.top",
+  "author": "pokeya",
+  "github": "https://github.com/pokeyaro",
+  "home": "http://pokeya.cc",
   "private": true,
-  "version": "4.0.5",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite --host",

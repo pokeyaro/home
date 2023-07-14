@@ -2,7 +2,7 @@
   <footer>
     <div class="power" v-show="!store.playerState">
       <span>
-        Copyright&nbsp;&copy;
+        © Copyright Agency and contributors
         <span v-if="siteStartDate?.length >= 4" class="site-start">
           {{ siteStartDate.substring(0, 4) }}
           -
@@ -26,7 +26,7 @@
     <div class="lrc" v-show="store.playerState">
       <music-one theme="filled" size="18" fill="#efefef" />
       <span class="lrc-text">
-        {{ store.getPlayerLrc ? store.getPlayerLrc : "这句没有歌词" }}
+        {{ store.getPlayerLrc ? store.getPlayerLrc : "🫠 歌词消失在外太空" }}
       </span>
       <music-one theme="filled" size="18" fill="#efefef" />
     </div>
