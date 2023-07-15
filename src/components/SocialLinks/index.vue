@@ -60,9 +60,25 @@ const socialTip = ref("通过这里联系我吧");
       display: inherit;
       .icon {
         margin: 0 12px;
-        transition: all 0.3s;
+        transition: all 0.2s ease-in-out;
         &:active {
           transform: scale(0.9);
+        }
+      }
+
+      .icon:hover {
+        animation: shake 0.5s ease-in-out infinite alternate;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(-5px);
+        }
+        50% {
+          transform: translateX(5px);
+        }
+        100% {
+          transform: translateX(-5px);
         }
       }
     }
