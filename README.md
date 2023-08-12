@@ -17,7 +17,7 @@
 
 ### API
 
-* [MetingAPI By 武恩赐](https://api.wuenci.com/meting/api/)
+* [MetingAPI By imsyy](https://api-meting.imsyy.top/api)
 * [搏天 API](https://api.btstu.cn/doc/sjbz.php)
 * [高德开放平台](https://lbs.amap.com/)
 * [Hitokoto 一言](https://hitokoto.cn/)
