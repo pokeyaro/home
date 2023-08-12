@@ -24,6 +24,12 @@
     "url": "http://qq.pokeya.cc/"
   },
   {
+    "name": "Twitter",
+    "icon": "/images/icon/twitter.png",
+    "tip": "你懂的 ~",
+    "url": "https://twitter.com/MysticPokeya"
+  },
+  {
     "name": "Email",
     "icon": "/images/icon/email.png",
     "tip": "来封 Email ~",
